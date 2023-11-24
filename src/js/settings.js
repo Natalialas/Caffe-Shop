@@ -3,10 +3,10 @@ export const select = {
     
   },
   containerOf: {
-      
+    pages: '#pages',
   },
   nav: {
-    
+    links: '.navigation a',
   },
 };
   
@@ -28,5 +28,5 @@ export const settings = {
 };
   
 export const templates = {
-  products: Handlebars.compile(document.querySelector(select.templateOf.products).innerHTML),
+//   products: Handlebars.compile(document.querySelector(select.templateOf.products).innerHTML),
 };

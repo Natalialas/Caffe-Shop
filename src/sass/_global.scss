@@ -1,35 +1,18 @@
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
   
-  body {
-    margin: 0;
-    padding: 0;
-}
-
-  #pages {
-    > * {
-      display: none;
-    }
-  
-    > .active {
-      display: block;
-    }
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.footer {
-    position: relative;
-    margin: 0;
-    height: 50px;
-    text-align: center;
+#pages {
+  > * {
+    display: none;
+  }
   
-    p{
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-family: $font-header;
-      font-size: 13px;
-      line-height: 0;
-    }
+  > .active {
+    display: block;
+  }
 }

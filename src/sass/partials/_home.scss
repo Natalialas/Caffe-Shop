@@ -1,0 +1,179 @@
+.hero {
+    height: 1000px;
+    width: 100vw;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("/images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    flex: 1;
+    color: $color-light;
+    font-weight: $font-black;
+    font-family: $font-text;
+    text-transform: uppercase;
+  
+    h3 {
+      font-size: 36px;
+      letter-spacing: 11px;
+      margin-left: 66px;
+      margin-top: 25px;
+      margin-bottom: 0;
+    }
+  
+    p {
+     width: 336px;
+     height: 102px;
+     font-size: 16px;
+     letter-spacing: 5px;
+     margin-left: 68px;
+     margin-top: 5px;
+     margin-bottom: 0;
+    }
+  }
+  
+  .navigation {
+    flex: 1;
+    text-align: end;
+    padding-right: 13px;
+    padding-top: 33px;
+  
+    li {
+      display: inline;
+      margin: 10px 10px;
+    }
+  
+    .navlist {
+      color: $color-light;
+      font-family: $font-text;
+      opacity: 0.502;
+      font-size: 20px;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-weight: $font-semibold;
+      line-height: 27px;
+      text-transform: uppercase;
+  
+      &.active {
+        color: $color-light;
+        opacity: 1;
+      }
+    }
+  
+    .navlist:hover {
+      color: $color-light;
+      opacity: 1;
+    }
+  }
+  
+  .page-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 25px;
+    position: relative;
+  
+    h1 {
+      color: $color-main;
+      font-family: $font-text;
+      font-weight: $font-bold;
+      font-size: 100px;
+      letter-spacing: 20px;
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 1;
+    }
+  }
+  
+  .page-title-left {
+    flex: 1;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding-top: 18px;
+  }
+  
+  .page-title-right {
+    flex: 1;
+    margin-top: 0;
+    margin-right: -30px;
+    text-align: end;
+  }
+  
+  .page-title::after {
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 5px;
+    background: $color-main;
+    position: absolute;
+    margin-top: 52px;
+  }
+  
+  .discover {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -400px;
+    text-align: center;
+  
+    h2 {
+      color: $color-light;
+      font-family: $font-text;
+      font-weight: $font-regular;
+      font-size: 34px;
+      letter-spacing: 7px;
+      line-height: 172px;
+      text-transform: uppercase;
+      margin-bottom: -40px;
+    }
+  
+    i {
+      color: $color-light;
+      width: 293px;
+      height: 285px;
+      font-size: 40px;
+      letter-spacing: 8px;
+      line-height: 40px;
+      text-transform: uppercase;
+    }
+  }
+  
+  #home {
+    height: 690px;
+    width: 100vw;
+    margin: 5px auto;
+    padding-top: 20px;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/images/about-us.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .about-us {
+    margin: 10px auto;
+    padding: 6px 0 0 30px;
+    width: 810px;
+    position: relative;
+  
+    p {
+      color: $color-light;
+      font-family: $font-text;
+      font-style: italic;
+      font-size: 30px;
+      letter-spacing: 1.5px;
+      margin-bottom: 40px;
+    }
+  
+    .p-rgh {
+      right: 0;
+      top: 275px;
+      position: absolute;
+    }
+  }

@@ -13,6 +13,130 @@
 
 <body>
 
+    <section class="hero">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <h3>El tigre</h3>
+                    <p>Venezuela coffee beans</p>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#home" class="navlist">Home</a></li>
+                        <li><a href="#products" class="navlist">Products</a></li>
+                        <li><a href="#contact" class="navlist">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-title">
+                <div class="page-title-left">
+                    <h1>Home of</h1>
+                </div>
+                <div class="page-title-right">
+                    <h1>Original tastes</h1>
+                </div>
+            </div>
+            <div class="discover">
+                <h2>Discover</h2>
+                <i class="icon-arrow"></i>
+            </div>
+        </div>
+    </section>
+
+    <div id="pages">
+        <section id="home">
+          <div id="home-wrapper" class="home-wrapper container"></div>
+        </section>
+        <section id="products">
+          <div id="products-wrapper" class="products-wrapper container"></div>
+        </section>
+        <section id="contact">
+          <div id="contact-wrapper" class="contact-wrapper container"></div>
+        </section>
+      </div>
+
+      <section class="footer">
+        <p>2023 EL TIGRE inc.</p>
+    </section>
+
+    <script id="template-home" type="text/x-handlebars-template">
+        <section id="products">
+            <div class="container">
+                <div class="products-list">
+                </div>
+            </div>
+        </section>
+        <section id="home">
+            <div class="container">
+                <div class="products-title">
+                    <h3>ABOUT US</h3>
+                </div>
+                <div class="about-us">
+                    <p>Who are we? Just a bunch of friends with<br> a love for a good coffee and desire to create<br> something new, something original</p>
+                    <p>Our coffees reflect us - young, wild and free.<br> We are on the journey of new tastes...</p>
+                    <p class="p-rgh">Join us!</p>
+                </div>
+            </div>
+        </section>
+    </script>
+
+    <script id="template-products" type="text/x-handlebars-template">
+        <section id="products">
+            <div class="container">
+                <div class="products-title">
+                    <h3>PRODUCTS</h3>
+                </div>
+                <div class="products-list">
+                </div>
+            </div>
+        </section>
+    </script>
+
+    <script id="template-contact" type="text/x-handlebars-template">
+        <section id="contact">
+            <div class="container">
+                <div class="products-title">
+                    <h3>CONTACT US</h3>
+                </div>
+                <div class="form">
+                    <form class="send-form">
+                        <p>NAME</p>
+                        <input type="text" name="name" required>
+                        <p>TITLE</p>
+                        <input type="text" name="title">
+                        <p>MESSAGE</p>
+                        <textarea name="message" cols="30" rows="5" maxlength="500" required></textarea>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </script>
+
+    <!--PRODUCTS TEMPLATE-->
+    <script id="template-products" type="text/x-handlebars-template">
+        <div id="{{id}}" class="products-details">
+            <div class="product-descr">
+                <div class="descr-one">
+                    <h1> {{ name }} </h1>
+                </div>
+                <div class="descr-two">
+                    <p> {{ describe }} </p>
+                </div>
+                <div class="descr-three">
+                    <ul>
+                        <li>ROASTING: <span> {{ roasting }} </span></li>
+                        <li>INTENSITY: <span> {{ intensity }}</span></li>
+                    </ul>
+                    <img src="/images/most-pop.jpg" class="disp {{popular}}" alt="popular">
+                </div>
+            </div>
+            <div class="product-img">
+                <img src=" {{ img }}" alt=" {{ name }} ">
+            </div>
+        </div>
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/app.js" type="module"></script>
   </body>
