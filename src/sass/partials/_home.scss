@@ -146,34 +146,34 @@
     }
   }
   
-  #home {
-    height: 690px;
-    width: 100vw;
-    margin: 5px auto;
-    padding-top: 20px;
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/images/about-us.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
+  // #home {
+  //   height: 690px;
+  //   width: 100vw;
+  //   margin: 5px auto;
+  //   padding-top: 20px;
+  //   background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/images/about-us.jpg");
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  // }
   
-  .about-us {
-    margin: 10px auto;
-    padding: 6px 0 0 30px;
-    width: 810px;
-    position: relative;
+  // .about-us {
+  //   margin: 10px auto;
+  //   padding: 6px 0 0 30px;
+  //   width: 810px;
+  //   position: relative;
   
-    p {
-      color: $color-light;
-      font-family: $font-text;
-      font-style: italic;
-      font-size: 30px;
-      letter-spacing: 1.5px;
-      margin-bottom: 40px;
-    }
+  //   p {
+  //     color: $color-light;
+  //     font-family: $font-text;
+  //     font-style: italic;
+  //     font-size: 30px;
+  //     letter-spacing: 1.5px;
+  //     margin-bottom: 40px;
+  //   }
   
-    .p-rgh {
-      right: 0;
-      top: 275px;
-      position: absolute;
-    }
-  }
+  //   .p-rgh {
+  //     right: 0;
+  //     top: 275px;
+  //     position: absolute;
+  //   }
+  // }

@@ -1,8 +1,26 @@
 import { settings, classNames, select } from './settings.js';
-// import Form from './components/Form.js';
-// import Home from './components/Home.js';
+import Home from './components/Home.js';
+import Product from './components/Product.js';
 
 const app = {
+  initData: function() {
+    const thisApp = this;
+
+    thisApp.data = {};
+
+    const url = settings.db.url + '/' + settings.db.products;
+
+
+    fetch(url)
+      .then((rawResponse) => {
+        return rawResponse.json();
+      })
+      .then(function (parsedResponse) {
+        thisApp.data.products = parsedResponse;
+        thisApp.initProducts(); 
+      });
+    console.log('thisApp.data', JSON.stringify(thisApp.data));
+  },
 
   initPages: function(){
     const thisApp = this;
@@ -56,30 +74,26 @@ const app = {
     }
   },
 
-    
-  initData: function() {
+  initProducts: function () {
     const thisApp = this;
 
-    thisApp.data = {};
+    new Product(thisApp.data.products);
+    
+    console.log('thisApp.data.products', thisApp.data.products);
+  },
 
-    const url = settings.db.url + '/' + settings.db.products;
+  initHome: function () {
+    const thisApp = this;
 
-
-    fetch(url)
-      .then((rawResponse) => {
-        return rawResponse.json();
-      })
-      .then((parsedResponse) => {
-        console.log('parsedResponse', parsedResponse);
-
-        thisApp.data.products = parsedResponse;
-      });
-    console.log('thisApp.data', JSON.stringify(thisApp.data));
+    thisApp.homeElem = document.querySelector(select.containerOf.home);
+    thisApp.home = new Home(thisApp.homeElem);
   },
 
   init: function() {
     const thisApp = this;
     thisApp.initData();
+    thisApp.initPages();
+    thisApp.initHome();
   },
 };
 

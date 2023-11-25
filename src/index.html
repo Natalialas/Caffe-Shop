@@ -45,13 +45,13 @@
 
     <div id="pages">
         <section id="home">
-          <div id="home-wrapper" class="home-wrapper container"></div>
+          <div class="home-wrapper container"></div>
         </section>
         <section id="products">
-          <div id="products-wrapper" class="products-wrapper container"></div>
+          <div class="products-wrapper container"></div>
         </section>
-        <section id="contact">
-          <div id="contact-wrapper" class="contact-wrapper container"></div>
+        <section id="form">
+          <div class="form-wrapper container"></div>
         </section>
       </div>
 
@@ -60,12 +60,7 @@
     </section>
 
     <script id="template-home" type="text/x-handlebars-template">
-        <section id="products">
-            <div class="container">
-                <div class="products-list">
-                </div>
-            </div>
-        </section>
+        <div class="home-products">
         <section id="home">
             <div class="container">
                 <div class="products-title">
@@ -78,22 +73,44 @@
                 </div>
             </div>
         </section>
+        </div>
     </script>
 
+    <!--PRODUCTS TEMPLATE-->
     <script id="template-products" type="text/x-handlebars-template">
         <section id="products">
             <div class="container">
                 <div class="products-title">
-                    <h3>PRODUCTS</h3>
+                    <h3>Products</h3>
                 </div>
-                <div class="products-list">
+                {{#each products}}
+                <div id="{{id}}" class="products-details {{#if reverse}}reverse{{/if}}">
+                    <div class="product-description">
+                        <div class="descr-one">
+                            <h1> {{ title }} </h1>
+                        </div>
+                        <div class="descr-two">
+                            <p> {{ description }} </p>
+                        </div>
+                        <div class="descr-three">
+                            <ul>
+                                <li>ROASTING: <span> {{ roasting }} </span></li>
+                                <li>INTENSITY: <span> {{ intensity }}</span></li>
+                            </ul>
+                            <img src="/images/most-pop.jpg" class="disp {{popular}}" alt="popular">
+                        </div>
+                    </div>
+                    <div class="product-img">
+                        <img src=" {{ img }}" alt=" {{ title }} ">
+                    </div>
                 </div>
+                {{/each}}
             </div>
         </section>
     </script>
 
-    <script id="template-contact" type="text/x-handlebars-template">
-        <section id="contact">
+    <script id="template-form" type="text/x-handlebars-template">
+        <section id="form">
             <div class="container">
                 <div class="products-title">
                     <h3>CONTACT US</h3>
@@ -113,29 +130,7 @@
         </section>
     </script>
 
-    <!--PRODUCTS TEMPLATE-->
-    <script id="template-products" type="text/x-handlebars-template">
-        <div id="{{id}}" class="products-details">
-            <div class="product-descr">
-                <div class="descr-one">
-                    <h1> {{ name }} </h1>
-                </div>
-                <div class="descr-two">
-                    <p> {{ describe }} </p>
-                </div>
-                <div class="descr-three">
-                    <ul>
-                        <li>ROASTING: <span> {{ roasting }} </span></li>
-                        <li>INTENSITY: <span> {{ intensity }}</span></li>
-                    </ul>
-                    <img src="/images/most-pop.jpg" class="disp {{popular}}" alt="popular">
-                </div>
-            </div>
-            <div class="product-img">
-                <img src=" {{ img }}" alt=" {{ name }} ">
-            </div>
-        </div>
-    </script>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/app.js" type="module"></script>
