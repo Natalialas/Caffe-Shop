@@ -146,34 +146,71 @@
     }
   }
   
-  // #home {
-  //   height: 690px;
-  //   width: 100vw;
-  //   margin: 5px auto;
-  //   padding-top: 20px;
-  //   background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/images/about-us.jpg");
-  //   background-repeat: no-repeat;
-  //   background-size: 100%;
-  // }
+  #home.active {
+    background: $color-light;
+  }
+
+  .home1-container {
+    height: 850px;
+    width: 100vw;
+    margin-left: -330px;
+    padding-top: 20px;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/images/about-us.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .products-titl {
+    text-align: center;
+    margin-left: 50px;
+    position: relative;
   
-  // .about-us {
-  //   margin: 10px auto;
-  //   padding: 6px 0 0 30px;
-  //   width: 810px;
-  //   position: relative;
+    h3 {
+    width: 1919px;
+    height: 285px;
+    font-size: 75px;
+    letter-spacing: 15px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: $color-main;
+    font-weight: $font-bold;
+    font-family: $font-text;
+    padding-bottom: 0px;
+    margin-bottom: -100px;
+    }
+  }
+
+  .products-titl::after {
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 5px;
+    margin-top: -180px;
+    background: $color-main;
+    position: absolute;
+  }
+
+  .about-us {
+    margin: 10px auto;
+    padding: 6px 0 0 30px;
+    width: 810px;
+    position: relative;
   
-  //   p {
-  //     color: $color-light;
-  //     font-family: $font-text;
-  //     font-style: italic;
-  //     font-size: 30px;
-  //     letter-spacing: 1.5px;
-  //     margin-bottom: 40px;
-  //   }
+    p {
+      font-size: 40px;
+      letter-spacing: 1px;
+      font-weight: $font-semibold;
+      font-style: italic;
+      color: $color-light;
+      font-family: $font-text;
+      margin-bottom: 40px;
+    }
   
-  //   .p-rgh {
-  //     right: 0;
-  //     top: 275px;
-  //     position: absolute;
-  //   }
-  // }
+    .p-rgh {
+      right: -100px;
+      top: 350px;
+      position: absolute;
+    }
+  }
