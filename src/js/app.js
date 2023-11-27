@@ -1,6 +1,7 @@
 import { settings, classNames, select } from './settings.js';
 import Home from './components/Home.js';
 import Product from './components/Product.js';
+import Form from './components/Form.js';
 
 const app = {
   initData: function() {
@@ -89,11 +90,18 @@ const app = {
     thisApp.home = new Home(thisApp.homeElem);
   },
 
+  initForm: function(){
+    const thisApp = this;
+    thisApp.formElem = document.querySelector(select.containerOf.contact);
+    thisApp.form = new Form(thisApp.formElem);
+  },
+
   init: function() {
     const thisApp = this;
     thisApp.initData();
     thisApp.initPages();
     thisApp.initHome();
+    thisApp.initForm();
   },
 };
 

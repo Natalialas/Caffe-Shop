@@ -50,8 +50,8 @@
         <section id="products">
           <div class="products-wrapper container"></div>
         </section>
-        <section id="form">
-          <div class="form-wrapper container"></div>
+        <section id="contact">
+          <div class="contact-wrapper container"></div>
         </section>
       </div>
 
@@ -84,6 +84,9 @@
                     </div>
                 </div>
                 {{/each}}
+                <section class="footer">
+                    <p>2023 EL TIGRE inc.</p>
+                </section>
             </div>
         </section>
     </script>
@@ -110,28 +113,30 @@
         </div>
     </script>
 
-    <script id="template-form" type="text/x-handlebars-template">
-        <section id="form">
+    <script id="template-contact" type="text/x-handlebars-template">
+        <section id="contact">
             <div class="container">
                 <div class="products-title">
-                    <h3>CONTACT US</h3>
+                    <h3>Contact us</h3>
                 </div>
                 <div class="form">
                     <form class="send-form">
-                        <p>NAME</p>
+                        <p>name</p>
                         <input type="text" name="name" required>
-                        <p>TITLE</p>
+                        <p>title</p>
                         <input type="text" name="title">
-                        <p>MESSAGE</p>
+                        <p>message</p>
                         <textarea name="message" cols="30" rows="5" maxlength="500" required></textarea>
-                        <button type="submit">SUBMIT</button>
+                        <button type="submit">submit</button>
                     </form>
                 </div>
             </div>
+            <section class="footer">
+                <p>2023 EL TIGRE inc.</p>
+            </section>
         </section>
+        
     </script>
-
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/app.js" type="module"></script>
