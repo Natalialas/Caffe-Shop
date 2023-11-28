@@ -2,8 +2,6 @@
   height: 1000px;
   width: 100vw;
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("/images/background.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
   
 .header {
@@ -145,51 +143,16 @@
     text-transform: uppercase;
   }
 }
-  
+
 #home.active {
-  background: $color-light;
+  margin: 0;
+  padding: auto;
 }
 
-.home1-container {
+.about-section {
   height: 850px;
   width: 100vw;
-  margin-left: -330px;
-  padding-top: 20px;
   background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/images/about-us.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.products-titl {
-  text-align: center;
-  margin-left: 50px;
-  position: relative;
-  
-  h3 {
-    width: 1919px;
-    height: 285px;
-    font-size: 75px;
-    letter-spacing: 15px;
-    line-height: 100px;
-    text-transform: uppercase;
-    color: $color-main;
-    font-weight: $font-bold;
-    font-family: $font-text;
-    padding-bottom: 0px;
-    margin-bottom: -100px;
-  }
-}
-
-.products-titl::after {
-  content: '';
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 700px;
-  height: 5px;
-  margin-top: -180px;
-  background: $color-main;
-  position: absolute;
 }
 
 .about-us {
