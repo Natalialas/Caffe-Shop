@@ -1,139 +1,186 @@
 @media (min-width: 320px) and (max-width: 1300px) {
-    .hero {
-      background-size: auto;
-      height: 800px;
-    }
+  .hero {
+    background-size: auto;
+    height: 800px;
+  }
   
-    .header {
+  .header {
+    flex-direction: column;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 400px;
+  }
+  
+  .navigation {
+    text-align: center;
+  }
+  
+  .navigation li {
+    margin: 5px;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo h3 {
+    margin: 25px auto 0 auto;
+  }
+  
+  .logo p {
+    margin: 5px auto;
+  }
+  
+  .page-title {
+    margin-top: 80px;
+    text-align: center;
+  }
+  
+  .page-title h1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+  
+  .page-title-left {
+    margin: 0 auto;
+  }
+  
+  .page-title-right {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .page-title::after {
+    margin-top: 20px;
+  }
+
+  .discover {
+    bottom: -300px;
+  }
+
+  .products-title h3 {
+    font-size: 35px;
+    letter-spacing: 7px;
+    margin-bottom: -170px;
+  }
+  
+  .products-title::after {
+    width: 300px;
+    margin-top: -200px;
+  }
+  
+  .products-details {
+    flex-direction: column;
+    height: 1000px;
+    margin-bottom: -250px;
+  
+    &.reverse {
       flex-direction: column;
     }
-  
-    .container {
-      margin: 0 auto;
-      width: 400px;
-    }
-  
-    .navigation {
-      text-align: center;
-    }
-  
-    .navigation li {
-      margin: 5px;
-    }
-  
-    .logo {
-      text-align: center;
-    }
-  
-    .logo h3 {
-      margin: 25px auto 0 auto;
-    }
-  
-    .logo p {
-      margin: 5px auto;
-    }
-  
-    .page-title {
-      margin-top: 80px;
-      text-align: center;
-    }
-  
-    .page-title h1 {
-      font-size: 40px;
-      letter-spacing: 10px;
-    }
-  
-    .page-title-left {
-      margin: 0 auto;
-    }
-  
-    .page-title-right {
-      margin: 0 auto;
-      text-align: center;
-    }
+  }
 
-    .page-title::after {
-      margin-top: 20px;
-    }
-
-    .discover {
-      bottom: -300px;
-    }
-
-    .products-title h3 {
-      font-size: 35px;
-      letter-spacing: 7px;
-      margin-bottom: -170px;
-    }
+  .descr-one {
+    margin: 10px auto;
+    text-align: center;
+  }
   
-    .products-title::after {
-      width: 300px;
-      margin-top: -200px;
+  .descr-one h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .descr-two {
+    text-align: center;
+    margin-top: -20px;
+    padding: 10px;
+
+    p {
+      font-size: 12px;
     }
+  }
+
+  .descr-two::after {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .descr-three .disp {
+    height: 80px;
+    width: 80px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .descr-three {
+    margin-top: 37px;
+    padding: 10px;
+  }
   
-    .products-details {
-      flex-direction: column;
-      height: 1000px;
-      margin-bottom: -250px;
-  
-      &.reverse {
-        flex-direction: column;
-      }
-    }
-
-    .descr-one {
-      margin: 10px auto;
-      text-align: center;
-    }
-  
-    .descr-one h1 {
-      font-size: 25px;
-      letter-spacing: 1px;
-    }
-
-    .descr-two {
-      text-align: center;
-      margin-top: -20px;
-      padding: 10px;
-      p {
-        font-size: 12px;
-      }
-    }
-
-    .descr-two::after {
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .descr-three .disp {
-      height: 80px;
-      width: 80px;
-      top: 20px;
-      right: 20px;
-    }
-
-    .descr-three {
-      margin-top: 37px;
-      padding: 10px;
-    }
-  
-    .descr-three ul {
+  .descr-three ul {
     margin-top: 10px;
-    }
+  }
   
-    .descr-three span {
-      letter-spacing: 1px;
-    }
+  .descr-three span {
+    letter-spacing: 1px;
+  }
 
-    .product-img {
-      padding-left: 5px;
-      margin-bottom: 180px;
+  .product-img {
+    padding-left: 5px;
+    margin-bottom: 180px;
       
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-      }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
+  }
+
+  .about-section {
+    height: 450px;
+  }
+  
+
+  .about-us {
+    padding: 5px auto 20px auto;
+    width: 300px;
+  }
+
+  .about-us p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .form {
+    height: 450px;
+  }
+
+  .form p {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  input {
+    margin: 17px auto;
+    width: 250px;
+    height: 40px;
+  }
+
+  button[type=submit] {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    margin: 20px auto;
+  }
+
+  textarea {
+    margin: 17px auto;
+    width: 250px;
+    height: 80px;
+  }
 }
